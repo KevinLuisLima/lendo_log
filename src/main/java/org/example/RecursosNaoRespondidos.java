@@ -1,9 +1,11 @@
+package org.example;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class RecursosNaoRespondidos {
-    public ArrayList<String> recursosNaoRespondidos(ArrayList<String> linhas) {
+    ManipuladorFile file = new ManipuladoFile();
+    public void recursosNaoRespondidos(ArrayList<String> linhas) {
         ArrayList<String> resultado = new ArrayList<>();
         Pattern objeto = Pattern.compile(".*?/Nov/2021.*?\\s(4\\d\\d)\\s.*?(http://\\S+)");
 
@@ -18,6 +20,6 @@ public class RecursosNaoRespondidos {
                 }
             }
         }
-        return resultado;
+        file.escritor(resultado, "naoRespondidosNovembro.txt");
     }
 }
