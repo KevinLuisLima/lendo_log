@@ -4,7 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class RecursosNaoRespondidos {
-    ManipuladorFile file = new ManipuladoFile();
+    ManipuladorFile file = new ManipuladorFile();
     public void recursosNaoRespondidos(ArrayList<String> linhas) {
         ArrayList<String> resultado = new ArrayList<>();
         Pattern objeto = Pattern.compile(".*?/Nov/2021.*?\\s(4\\d\\d)\\s.*?(http://\\S+)");

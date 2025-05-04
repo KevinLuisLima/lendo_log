@@ -4,7 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class RecursosRespondidos {
-    ManipuladorFile file = new ManipuladoFile();
+    ManipuladorFile file = new ManipuladorFile();
     public void recursosRespondidos(ArrayList<String> linhas) {
         ArrayList<String> resultado = new ArrayList<>();
 
