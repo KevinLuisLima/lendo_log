@@ -1,9 +1,11 @@
+package org.example;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class RecursosRespondidos {
-    public ArrayList<String> recursosRespondidos(ArrayList<String> linhas) {
+    ManipuladorFile file = new ManipuladoFile();
+    public void recursosRespondidos(ArrayList<String> linhas) {
         ArrayList<String> resultado = new ArrayList<>();
 
         Pattern objeto = Pattern.compile("(\\d+\\.\\d+\\.\\d+\\.\\d+).*?\\s(2\\d\\d)\\s+(\\d{4,})\\b");
@@ -20,6 +22,6 @@ public class RecursosRespondidos {
                 }
             }
         }
-        return resultado;
+        file.escritor(resultado, "recursosGrandes.txt");
     }
 }
