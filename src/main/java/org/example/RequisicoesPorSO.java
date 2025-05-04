@@ -7,7 +7,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class RequisicoesPorSO {
-    public Map<String, Double> percentualPorSO(ArrayList<String> linhas) {
+	ManipuladorFile file = new ManipuladorFile();
+    public void percentualPorSO(ArrayList<String> linhas) {
         Map<String, Integer> contagemPorSO = new HashMap<>();
         contagemPorSO.put("Windows", 0);
         contagemPorSO.put("Macintosh", 0);
@@ -46,7 +47,6 @@ public class RequisicoesPorSO {
                 }
             }
         }
-
         Map<String, Double> percentualPorSO = new HashMap<>();
         if (total> 0) {
             for (Map.Entry<String, Integer> entry : contagemPorSO.entrySet()) {
@@ -58,8 +58,17 @@ public class RequisicoesPorSO {
                 percentualPorSO.put(so, 0.0);
             }
         }
+        
+        List<String> keys = new ArrayList<>(percentualPorSO.keySet());
+        List<Double> values = new ArrayList<>(PercentualPorSO.values());
+        List<Map.Entry<String, Double>> entries = new ArrayList<>(percentualPorSO.entrySet());
+        	
+        	for (Map.Entry<String, Double> entry : percentualPorSO.entrySet()) {
+        	    System.out.println(entry.getKey() + ": " + entry.getValue());
+        	}
+        
 
-        return percentualPorSO;
+        file.escritor(percentualPorSO, "sistemasOperacionais.txt");
         
     }
 }
