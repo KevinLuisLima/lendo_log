@@ -1,8 +1,10 @@
-package org.example;
+package example;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
+/*
+Classe que pega todos os recursos respondidos no arquivo access.log.
+ */
 public class RecursosRespondidos {
     ManipuladorFile file = new ManipuladorFile();
     public void recursosRespondidos(ArrayList<String> linhas) {

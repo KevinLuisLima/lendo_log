@@ -1,8 +1,10 @@
-package org.example;
+package example;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
+/*
+Classe para os recursos não respondidos pêgos em novembro de 2021.
+ */
 public class RecursosNaoRespondidos {
     ManipuladorFile file = new ManipuladorFile();
     public void recursosNaoRespondidos(ArrayList<String> linhas) {

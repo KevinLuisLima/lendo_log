@@ -1,9 +1,11 @@
-package org.example;
+package example;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
-
+/*
+Classe para manipualr os arquivos.
+ */
 public class ManipuladorFile {
     public ArrayList<String> leitor() {
         ArrayList<String> output = new ArrayList<>();

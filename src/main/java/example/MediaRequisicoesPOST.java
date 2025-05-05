@@ -1,9 +1,11 @@
-package org.example;
+package example;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
+/*
+Classe para calcular a media de requisições post.
+ */
 public class MediaRequisicoesPOST {
 	public Double CalcularMediaPOST(ArrayList<String> linhas){
 		ArrayList<Integer> tamanhoSucessos = new ArrayList<>();

@@ -72,7 +72,7 @@
                     <docencoding>UTF-8</docencoding>
                     <charset>UTF-8</charset>
                     <encoding>UTF-8</encoding>
-                    <sourcepath>${project.basedir}/src/main/java/org.example</sourcepath>
+                    <sourcepath>${project.basedir}/src/main/java/example</sourcepath>
                     <subpackages>org.example</subpackages>
                 </configuration>
             </plugin>

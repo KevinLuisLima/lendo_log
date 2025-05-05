@@ -1,8 +1,10 @@
-package org.example;
+package example;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
-
+/*
+Classe principal.
+ */
 public class Main {
     static Scanner getInput = new Scanner(System.in);
 

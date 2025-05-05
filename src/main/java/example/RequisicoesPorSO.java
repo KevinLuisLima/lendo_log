@@ -1,11 +1,12 @@
-package org.example;
-import java.text.DecimalFormat;
+package example;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
+/*
+Classe que pega todas as requisições feitas por cada SO e retorna suas porcentagens.
+ */
 public class RequisicoesPorSO {
     ManipuladorFile file = new ManipuladorFile();
 
