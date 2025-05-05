@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class ManipuladorFile {
     public ArrayList<String> leitor() {
         ArrayList<String> output = new ArrayList<>();
-        String path = "src/file_de_leitura_e_gerados/access.log";
+        String path = "src/main/resources/access.log";
 
         try {
             BufferedReader reader = new BufferedReader(new FileReader(path));
@@ -29,10 +29,15 @@ public class ManipuladorFile {
         return output;
     }
     public void escritor(ArrayList<String> input, String nomeDoArquivo){
-        String path = "src/file_de_leitura_e_gerados/" + nomeDoArquivo;
-        try{
-            boolean isArchiveExisting = new File(path).exists();
-            FileWriter writer = new FileWriter(path, StandardCharsets.UTF_8,true);
+        String directoryPath = "src/main/java/org/example/Analise";
+        String filePath = directoryPath + "/" + nomeDoArquivo;
+
+        try {
+            File directory = new File(directoryPath);
+            if (!directory.exists()) {
+                directory.mkdirs();
+            }
+            FileWriter writer = new FileWriter(filePath, StandardCharsets.UTF_8,true);
 
             for (String s : input) {
                 writer.write(s + "\n");

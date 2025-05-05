@@ -57,7 +57,6 @@ public class RequisicoesPorSO {
         ArrayList<String> linhasFormatadas = new ArrayList<>();
         for (Map.Entry<String, Double> entry : percentualPorSO.entrySet()) {
             linhasFormatadas.add(entry.getKey() + " - " + String.format("%.4f", entry.getValue()) + "%");
-            System.out.println(entry.getKey() + ": " + entry.getValue());
         }
 
         file.escritor(linhasFormatadas, "sistemasOperacionais.txt");
