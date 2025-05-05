@@ -22,11 +22,6 @@
             <scope>test</scope>
         </dependency>
 
-        <dependency>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-javadoc-plugin</artifactId>
-            <version>3.11.2</version>
-        </dependency>
     </dependencies>
 
     <reporting>
@@ -56,7 +51,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>3.11.2</version>
+                <version>3.5.0</version>
                 <executions>
                     <execution>
                         <id>attach-javadocs</id>
@@ -65,18 +60,7 @@
                         </goals>
                     </execution>
                 </executions>
-                <configuration>
-                    <source>17</source>
-                    <show>public</show>
-                    <failOnError>false</failOnError>
-                    <docencoding>UTF-8</docencoding>
-                    <charset>UTF-8</charset>
-                    <encoding>UTF-8</encoding>
-                    <sourcepath>${project.basedir}/src/main/java/example</sourcepath>
-                    <subpackages>org.example</subpackages>
-                </configuration>
             </plugin>
-
         </plugins>
     </build>
 

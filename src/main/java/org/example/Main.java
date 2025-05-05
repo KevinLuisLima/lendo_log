@@ -1,4 +1,4 @@
-package example;
+package org.example;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;

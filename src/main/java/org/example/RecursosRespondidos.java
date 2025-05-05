@@ -1,4 +1,4 @@
-package example;
+package org.example;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

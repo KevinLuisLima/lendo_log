@@ -1,4 +1,4 @@
-package example;
+package org.example;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
@@ -31,7 +31,7 @@ public class ManipuladorFile {
         return output;
     }
     public void escritor(ArrayList<String> input, String nomeDoArquivo){
-        String directoryPath = "src/main/java/org/example/Analise";
+        String directoryPath = "src/main/java/org/org.example/Analise";
         String filePath = directoryPath + "/" + nomeDoArquivo;
 
         try {
